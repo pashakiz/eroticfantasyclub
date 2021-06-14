@@ -1,0 +1,186 @@
+/**/$container-xxl:             1364px;
+/**/$container-xxxl:            1640px;
+/**/$body_bg_color:             #EBE5E4;
+/**/$btn_bg_color:              #F69393;
+/**/$btn_bg_color_hover:        #F68282;
+/**/$btn_bg_color_active:       #F68282;
+/**/$bg_dark_1:                 #416A67;
+/**/$bg_light_1:                #F3DDDD;
+/**/$bg_light_2:                #EED3D2;
+/**/$bg_light_3:                #E3DCDA;
+/**/$bg_light_4:                #E8E1DF;
+/**/$font_color:                #416A67;
+/**/$font_color2:               #fff;
+/**/$font_color3:               #F2F2F2;
+$font_family:               "CeraRoundPro", sans-serif;
+/**/$font_weight:               400;
+/**/$font_size:                 23px;
+/**/$font_size_mobile:          16px;
+/**/$body_mb:                   210px;
+/**/$body_mb_mob:               100px;
+/**/$font_family2:              $font_family;
+/**/$link_txt_family:           $font_family;
+/**/$link_color:                #fff;
+/**/$link_hover_color:          #F68282;
+/**/$link_active_color:         $btn_bg_color_hover;
+/**/$link_hover_color1:         $btn_bg_color_hover;
+/**/$link_hover_color2:         $btn_bg_color_hover;
+/**/$footer_height:             278px;
+/**/$footer_height_mob:         300px;
+/**/$footer_text_color:         $font_color3;
+/**/$footer_text_color_hover:   $link_hover_color;
+/**/$footer_text_color_active:  $link_hover_color;
+
+//Form
+$input_bg:                  #DEDBDA;
+$input_hover_bg:            #BFD2D1;
+$input_txt_family:          $font_family;
+$input_txt_color:           $font_color;
+$input_hover_txt_color:     $font_color;
+$input_placeholder_color:   $font_color;
+$input_txt_xs_size:         16px;
+$input_txt_xs_lh:           1.5;
+$input_txt_size:            24px;
+$input_txt_lh:              1.5;
+$input_border_color:        $input_bg;
+$input_border:              none;
+$input_hover_border:        $input_border;
+$input_border_radius:       100px;
+$textarea_border_radius:    25px;
+$textarea_border_radius_mob:22px;
+
+//Custom Checkbox
+$checkbox_xs_width:             38px;
+$checkbox_xs_height:            20px;
+$checkbox_xs_space_text:        19px;
+$checkbox_xs_padding_left:      $checkbox_xs_width + $checkbox_xs_space_text;
+$checkbox_xs_left:              -$checkbox_xs_width - $checkbox_xs_space_text;
+$checkbox_xs_top:               8px;
+$checkbox_xs_marker_width:      38px;
+$checkbox_xs_marker_height:     20px;
+$checkbox_xs_marker_top:        11px;
+$checkbox_xs_marker_left:       $checkbox_xs_left + 3px;
+
+$checkbox_width:                52px;
+$checkbox_height:               27px;
+$checkbox_space_text:           27px;
+$checkbox_padding_left:         $checkbox_width + $checkbox_space_text;
+$checkbox_left:                 -$checkbox_width - $checkbox_space_text;
+$checkbox_top:                  11px;
+$checkbox_marker_width:         52px;
+$checkbox_marker_height:        27px;
+$checkbox_marker_top:           16px;
+$checkbox_marker_left:          $checkbox_left + 5px;
+
+$checkbox_txt_family:           $font_family;
+$checkbox_txt_color:            $font_color;
+$checkbox_txt_xs_size:          16px;
+$checkbox_txt_size:             19px;
+$checkbox_txt_xs_lh:            30px;
+$checkbox_txt_lh:               36px;
+$checkbox_bg_color:             transparent;
+$checkbox_checked_bg_color:     $btn_bg_color;
+$checkbox_border:               1px solid #000;
+$checkbox_checked_border_color: #000;
+$checkbox_active_bg_color:      transparent;
+$checkbox_bg_icon:              '';
+$checkbox_bg_icon_checked:      '../img/icons/checkbox-checked.svg';
+$checkbox_checked_marker_color: #000;
+
+//Custom RadioButton
+$radio_xs_width:             38px;
+$radio_xs_height:            38px;
+$radio_xs_marker_width:      12px;
+$radio_xs_marker_height:     12px;
+$radio_xs_space_text:        18px;
+$radio_xs_left:              -$radio_xs_width - $radio_xs_space_text;
+$radio_xs_top:               -6px;
+$radio_xs_padding_left:      $radio_xs_width + $radio_xs_space_text;
+$radio_xs_marker_top:        6px;
+$radio_xs_marker_left:       $radio_xs_left + 13px;
+
+$radio_width:                62px;
+$radio_height:               62px;
+$radio_marker_width:         19px;
+$radio_marker_height:        19px;
+$radio_space_text:           30px;
+$radio_left:                 -$radio_width - $radio_space_text;
+$radio_top:                  -11px;
+$radio_padding_left:         $radio_width + $radio_space_text;
+$radio_marker_top:           10px;
+$radio_marker_left:          $radio_left + 21px;
+$radio_checked_marker_color: $bg_dark_1;
+
+$radio_txt_family:           $font_family;
+$radio_txt_color:            $font_color;
+$radio_txt_xs_size:          16px;
+$radio_txt_size:             24px;
+$radio_txt_xs_lh:            1.5;
+$radio_txt_lh:               1.5;
+$radio_bg_color:             $input_bg;
+$radio_checked_bg_color:     $radio_bg_color;
+$radio_border:               1px solid $radio_bg_color;
+$radio_hover_border:         $radio_border;
+$radio_checked_border_color: $radio_bg_color;
+$radio_active_bg_color:      $radio_bg_color;
+$radio_bg_icon:              "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='4' fill='%234E464F'/%3E%3C/svg%3E";
+
+//Custom Switch
+$switch_bg_width: 105px;
+$switch_bg_height: 56px;
+$switch_bg_width_mob: 64px;
+$switch_bg_height_mob: 28px;
+$switch_bg_border_radius: 100px;
+$switch_dot_size_w: 23px;
+$switch_dot_size_h: 23px;
+$switch_dot_size_w_mob: 16px;
+$switch_dot_size_h_mob: 16px;
+$switch_dot_border_radius: 100%;
+$switch_bg_color: $input_bg;
+$switch_bg_color_active: $input_bg;
+$switch_bg_color_checked: $input_bg;
+$switch_dot_color: #C1C1C1;
+$switch_dot_color_active: $switch_dot_color;
+$switch_dot_color_checked: $bg_dark_1;
+$switch_border_color: #000;
+$switch_border: none;
+$switch_border_active: none;
+$switch_dot_border: none;
+$switch_txt: '';
+$switch_txt_color: #000;
+$switch_txt_color_checked: #000;
+$switch_dot_txt_1: 'On';
+$switch_dot_txt_0: 'Off';
+$switch_dot_txt_size_mob: 16px;
+$switch_dot_txt_size: 20px;
+$switch_dot_txt_padding_mob: 0;
+$switch_dot_txt_padding: 0;
+$switch_dot_txt_color: $font_color3;
+$switch_dot_txt_color_checked: $font_color3;
+$switch_margin_right: 49px;
+$switch_margin_right_mob: 20px;
+$switch_margin_top: 0;
+$switch_margin_top_mob: 28px;
+$switch_label_fontfamily: $font_family;
+$switch_label_fontsize: 20px;
+$switch_label_fontsize_mob: $font_size_mobile;
+$switch_label_lineheight: 37px;
+$switch_label_lineheight_mob: 28px;
+
+//Bootstrap container width
+@function get-container-width($key: 'md') {
+  @return map-get($container-max-widths, $key);
+}
+
+//User List page wider
+$user_list_wider:           160px;
+$user_list_item_breakpoint: 992px;
+$user_list_title_color:     $font_color3;
+
+/**/
+@mixin circle($diameter, $background-color) {
+  width: $diameter;
+  height: $diameter;
+  background-color: $background-color;
+  border-radius: 100%;
+}

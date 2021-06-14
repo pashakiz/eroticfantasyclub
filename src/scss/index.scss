@@ -1,0 +1,234 @@
+.display {
+  p {
+    line-height: 34px;
+    @media (min-width: 768px) {
+      line-height: 40px;
+      font-size: 18px;
+    }
+  }
+}
+.display_01 {
+  .index-btn-area {
+    @media (min-width: 1200px) {
+      width: 676px;
+    }
+  }
+}
+.display_02 {
+  .index-btn-area {
+    @media (min-width: 1200px) {
+      width: 626px;
+      margin: 64px auto 0;
+    }
+  }
+}
+.display_03 {
+  .secondscreen {
+    margin-bottom: 675px;
+    @media (min-width: 992px) {
+      margin-bottom: 999px;
+    }
+    @media (min-width: 1200px) {
+      margin: 0;
+    }
+  }
+}
+
+.btn_display-01 {
+  @media (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+
+.firstscreen {
+  height: 580px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  @media (min-width: 992px) {
+    height: 683px;
+  }
+  @media (min-width: 1200px) {
+    height: 683px;
+  }
+  @media (min-width: 1500px) {
+    height: 853px;
+  }
+  @media (min-width: 1920px) {
+    height: 1092px;
+  }
+  &.firstscreen_index {
+    @media (min-width: 1200px) {
+      background-position: 50% 100%;
+    }
+  }
+  &.firstscreen_bg-00 {
+    background-image: url('../img/bg/bg-firstscreen-04m.jpg');
+    @media (min-width: 1200px) {
+      height: 100vh;
+      background-image: url('../img/bg/bg-firstscreen.svg');
+    }
+  }
+  &.firstscreen_bg-01 {
+    background-image: url('../img/bg/bg-firstscreen-01m.jpg');
+    @media (min-width: 1200px) {
+      background-image: url('../img/bg/bg-firstscreen-01d.jpg');
+    }
+  }
+  &.firstscreen_bg-02 {
+    background-image: url('../img/bg/bg-firstscreen-02m.jpg');
+    @media (min-width: 1200px) {
+      background-image: url('../img/bg/bg-firstscreen-02d.jpg');
+    }
+  }
+  &.firstscreen_bg-03 {
+    background-image: url('../img/bg/bg-firstscreen-03m.jpg');
+    @media (min-width: 1200px) {
+      background-image: url('../img/bg/bg-firstscreen-03d.jpg');
+    }
+  }
+  &.firstscreen_bg-04 {
+    background-image: url('../img/bg/bg-firstscreen-04m.jpg');
+    @media (min-width: 1200px) {
+      background-image: url('../img/bg/bg-firstscreen-04d.jpg');
+    }
+  }
+}
+
+.firstscreen__content {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  @media (min-width: 1200px) {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 0 0 50px;
+  }
+  @media (min-width: 1920px) {
+    padding: 0 0 0 48px;
+  }
+}
+
+.secondscreen {
+  color: $font_color2;
+  &.secondscreen_index {
+    margin: 72px 0 0;
+    @media (min-width: 1200px) {
+      margin: 100px 0 0;
+    }
+    @media (min-width: 1500px) {
+      margin: 135px 0 0;
+    }
+    @media (min-width: 1920px) {
+      margin: 188px 0 0;
+    }
+  }
+}
+.progress {
+  &.progress_index {
+    background-color: $bg_light_4;
+    height: 54px;
+    border-radius: 100px;
+    position: relative;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      width: 382px;
+      max-width: 382px;
+    }
+    @media (min-width: 992px) {
+      width: 100%;
+      max-width: 382px;
+    }
+    @media (min-width: 1200px) {
+      height: 74px;
+      width: 600px;
+      max-width: 600px;
+      margin: 0;
+      left: -250px;
+    }
+    @media (min-width: 1500px) {
+      width: 730px;
+      max-width: 730px;
+    }
+    @media (min-width: 1920px) {
+      width: 730px;
+      max-width: 730px;
+    }
+  }
+  .progress-bar {
+    font-family: $font_family;
+    background-color: $btn_bg_color;
+    border: 6px solid $bg_light_4;
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: $font_color2;
+    text-transform: uppercase;
+    padding: 0 13px;
+    @media (min-width: 1200px) {
+      font-size: 24px;
+      line-height: 30px;
+      padding: 0 20px;
+    }
+  }
+}
+
+.index-btn-area {
+  margin: 0 auto 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  @media (min-width: 1200px) {
+    margin: 0 auto;
+    z-index: 2;
+  }
+}
+
+@keyframes bits {
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.btn-index {
+  animation: 2s bits infinite linear;
+}
+
+.circle {
+  @media (min-width: 1200px) {
+    &.circle1 {
+      @include circle(20px, $btn_bg_color);
+    }
+    &.circle2 {
+      @include circle(60px, $btn_bg_color);
+    }
+  }
+}
+
+
+.collage {
+  width: 100%;
+  margin: 0 0 33px;
+  position: relative;
+  @media (min-width: 576px) {;
+    margin: 0 0 60px;
+  }
+  @media (min-width: 1200px) {
+    margin: -69px 0 119px;
+    position: relative;
+  }
+}
+
+.collage__img {
+  width: 100%;
+  height: auto;
+  @media (min-width: 1200px) {
+    position: relative;
+    bottom: -1px;
+  }
+}

@@ -1,0 +1,108 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .logo__img {
+    width: 34px;
+    height: 34px;
+    margin: 0 15px 0 0;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+    background-image: url('../img/icons/logo-white.svg');
+    @media (min-width: 992px) {
+      width: 58px;
+      height: 58px;
+      margin: 0 35px 0 0;
+    }
+  }
+  .logo__txt {
+    text-transform: uppercase;
+    font-family: $font_family;
+    font-weight: 500;
+    color: $font_color2;
+    font-size: 15px;
+    letter-spacing: 2px;
+    @media (min-width: 992px) {
+      font-size: 25px;
+    }
+  }
+}
+
+.logo_main {
+  flex-direction: column;
+  margin: 61px 0 43px;
+  @media (min-width: 992px) {
+    //margin: 61px 0 43px 0;
+  }
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 61px 0 43px;
+  }
+  @media (min-width: 1500px) {
+    margin: 60px 0 50px 0;
+  }
+  @media (min-width: 1920px) {
+    margin: 193px 0 79px 0;
+  }
+  .logo__img {
+    width: 40px;
+    height: 40px;
+    margin: 0 0 9px 0;
+    background-image: url('../img/icons/logo-white.svg');
+    @media (min-width: 992px) {
+      width: 69px;
+      height: 69px;
+      margin: 0 0 15px 0;
+    }
+    @media (min-width: 1200px) {
+      margin: 0 30px 0 0;
+      background-image: url('../img/icons/logo.svg');
+    }
+    @media (min-width: 1500px) {
+      width: 69px;
+      height: 69px;
+    }
+  }
+  .logo__txt {
+    color: $font_color3;
+    font-weight: 500;
+    font-size: 17px;
+    @media (min-width: 992px) {
+      font-size: 30px;
+    }
+    @media (min-width: 1200px) {
+      color: $font_color;
+    }
+  }
+}
+
+.logo_footer {
+  flex-direction: column;
+  margin: 0 0 40px 0;
+  @media (min-width: 992px) {
+    margin: 0 0 57px 0;
+  }
+  .logo__img {
+    width: 31px;
+    height: 31px;
+    margin: 0 0 7px 0;
+    background-image: url('../img/icons/logo-footer.svg');
+    @media (min-width: 992px) {
+      width: 37px;
+      height: 37px;
+      margin: 0 0 18px 0;
+    }
+  }
+  .logo__txt {
+    color: $font_color3;
+    font-weight: 400;
+    font-size: 13px;
+    @media (min-width: 992px) {
+      font-size: 16px;
+    }
+  }
+}
+

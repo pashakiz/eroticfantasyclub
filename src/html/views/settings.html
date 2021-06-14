@@ -1,0 +1,76 @@
+<%= _.template(require('./../includes/header.html'))() %>
+    <script>
+        //document.body.classList.add('body_header-mob-bg');
+        //document.querySelector('.header.header_page').classList.add('header_page-null');
+    </script>
+    <main class="main">
+        <div class="container container_settings">
+            <form action="">
+                <div class="row">
+                    <div class="col-12 col-xl-6">
+                        <div class="settings-photo">
+                            <div class="profile-photo">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-area d-flex align-items-center justify-content-center" for="customFile">
+                                        <span class="btn btn_3">Change Photo</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="link1 d-none d-xl-inline-block">Sign Out</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <div class="settings-form">
+                            <div class="form-group form-group_check1">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline1">Male</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline2">Female</label>
+                                </div>
+                            </div>
+                            <div class="form-group form-group_input">
+                                <input class="form-control" type="text" placeholder="Full Name">
+                            </div>
+                            <div class="form-group form-group_input">
+                                <input class="form-control" type="text" placeholder="Age">
+                            </div>
+                            <div class="form-group form-group_input m-xl-0">
+                                <textarea class="form-control" placeholder="About"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-xl-center row-settings-bottom">
+                    <div class="col-12 col-xl-6">
+                        <div class="settings-form p-0">
+                            <div class="form-group form-group_check">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="form-group-check-wrap__item">
+                                        <div class="custom-control custom-switch custom-switch_inline">
+                                            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                                            <label class="custom-control-label" for="customSwitch1">Notify me of site updates</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <div class="settings-form p-0">
+                            <button class="btn btn_w100 settings__btn">save preferences</button>
+                            <div class="text-center">
+                                <a href="#" class="link1 d-xl-none">Sign Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+<%= _.template(require('./../includes/footer.html'))() %>

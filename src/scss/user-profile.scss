@@ -1,0 +1,334 @@
+.owl-carousel {
+  .owl-dots {
+    position: absolute;
+    right: 0;
+    top: 31px;
+    padding: 0 15px;
+  }
+  button.owl-dot {
+    display: inline-block;
+    width: 3px;
+    height: 18px;
+    min-width: 3px;
+    min-height: 18px;
+    background-color: $body_bg_color;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    +button.owl-dot {
+      margin-top: 13px;
+    }
+    &.active {
+      background-color: $btn_bg_color;
+    }
+  }
+}
+
+.userprofile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.userprofile__photo {
+  margin: 0 auto 32px;
+  @media (min-width: 1200px) {
+    margin: 0 99px 0 0;
+  }
+}
+
+.up-slider {
+  width: 290px;
+  height: 462px;
+  position: relative;
+  overflow: hidden;
+  @media (min-width: 576px) {
+    width: 374px;
+    height: 556px;
+  }
+
+  .up-slider__img {
+    width: 100%;
+    height: 462px;
+    border-radius: 500px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+    @media (min-width: 576px) {
+      width: 374px;
+      height: 556px;
+    }
+  }
+
+  @mixin owlnavs {
+    width: 12px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+    position: absolute;
+    &.disabled {
+      background-image: none;
+    }
+    @media (min-width: 576px) {
+      width: 21px;
+      height: 54px;
+    }
+  }
+
+  &.owl-carousel {
+    .owl-nav {
+      width: 100%;
+      height: 30px;
+      position: absolute;
+      top: 50%;
+      margin-top: -15px;
+      @media (min-width: 576px) {
+        height: 54px;
+        margin-top: -27px;
+      }
+      .owl-prev {
+        @include owlnavs;
+        left: 22px;
+        background-image: url('../img/icons/arrow-left.svg');
+        @media (min-width: 576px) {
+          left: 32px;
+        }
+      }
+      .owl-next {
+        @include owlnavs;
+        right: 22px;
+        background-image: url('../img/icons/arrow-right.svg');
+        @media (min-width: 576px) {
+          right: 32px;
+        }
+      }
+    }
+  }
+
+}
+.userprofile__btn {
+  top: -74px;
+}
+.userprofile__info {
+  margin: 32px auto 55px;
+  @media (min-width: 400px) {
+    width: 320px;
+    max-width: 320px;
+  }
+  @media (min-width: 768px) {
+    width: 470px;
+    max-width: 470px;
+  }
+  @media (min-width: 1200px) {
+    margin: 34px 0 0 0;
+    color: $font_color;
+  }
+}
+.userprofile__infobg {}
+.userprofile__row {
+  text-align: center;
+  color: $font_color;
+  margin-bottom: 30px;
+  @media (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+}
+.userprofile__name {
+  font-family: $font_family2;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  @media (min-width: 1200px) {
+    font-size: 42px;
+    margin: 0 0 17px 0;
+  }
+}
+.userprofile__loc {
+  font-family: $font_family;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  @media (min-width: 1200px) {
+    font-size: 23px;
+  }
+}
+.userprofile__title {
+  font-family: $font_family;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1;
+  margin-bottom: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  @media (min-width: 1200px) {
+    text-align: left;
+    font-size: 22px;
+    margin-bottom: 52px;
+  }
+  @media (min-width: 1500px) {
+    font-size: 29px;
+    margin-bottom: 51px;
+  }
+}
+
+.compatibility {
+  &.compatibility_mb {
+    padding-bottom: 29px;
+    @media (min-width: 1200px) {
+      padding-bottom: 66px;
+    }
+  }
+  .compatibility__chart {
+    +.compatibility__chart {
+      margin-left: 25px;
+      @media (min-width: 576px) {
+        margin-left: 35px;
+      }
+      @media (min-width: $user_list_item_breakpoint) {
+        margin-left: 35px;
+      }
+    }
+  }
+  .compatibility__progress {
+    display: flex;
+    .dotmark {
+      width: 19px;
+      height: 10px;
+      border-radius: 100px;
+      background-color: $bg_light_2;
+      + .dotmark {
+        margin-left: 6px;
+      }
+      @media (min-width: $user_list_item_breakpoint) {
+        width: 29px;
+        height: 16px;
+        + .dotmark {
+          margin-left: 8px;
+        }
+      }
+    }
+    &.progress1 {
+      .dotmark:nth-child(1) {
+        background-color: $btn_bg_color;
+      }
+    }
+    &.progress2 {
+      .dotmark:nth-child(1),
+      .dotmark:nth-child(2) {
+        background-color: $btn_bg_color;
+      }
+    }
+    &.progress3 {
+      .dotmark {
+        background-color: $btn_bg_color !important;
+      }
+    }
+  }
+  .compatibility__title {
+    font-family: $font_family;
+    color: $font_color;
+    font-weight: 500;
+    font-size: 13px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    @media (min-width: $user_list_item_breakpoint) {
+      font-size: 21px;
+      margin-top: 15px;
+    }
+  }
+
+  &.compatibility_list {
+    margin: 0 0 10px 0;
+    @media (min-width: $user_list_item_breakpoint) {
+      margin: 0 0 26px 0;
+    }
+    .compatibility__title {
+      font-size: 6px;
+      margin-top: 6px;
+      text-align: center;
+      @media (min-width: $user_list_item_breakpoint) {
+        font-size: 13px;
+        margin-top: 9px;
+      }
+    }
+    .compatibility__progress {
+      .dotmark {
+        background-color: #E7CCCA;
+        width: 9px;
+        height: 6px;
+        + .dotmark {
+          margin-left: 2px;
+        }
+        @media (min-width: $user_list_item_breakpoint) {
+          width: 17px;
+          height: 10px;
+          + .dotmark {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+    .compatibility__chart {
+      +.compatibility__chart {
+        margin-left: 5px;
+        @media (min-width: $user_list_item_breakpoint) {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+
+.user-profile-title {
+  font-family: $font_family2;
+  color: $body_bg_color;
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 34px;
+  text-transform: uppercase;
+  @media (min-width: 1200px) {
+    color: $font_color;
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+}
+
+.user-profile-about {
+  padding: 0 15px;
+  background-color: $bg_dark_1;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+  p {
+    color: $font_color3;
+    line-height: 36px;
+  }
+  @media (min-width: 1200px) {
+    background-color: transparent;
+    padding: 0;
+    text-align: left;
+    font-size: 19px;
+    p {
+      color: $font_color;
+      line-height: 43px;
+    }
+  }
+  .user-profile-about__title {
+    line-height: 28px;
+    margin: 56px 0 41px;
+    @media (min-width: 1200px) {
+      margin: 0 0 27px;
+      line-height: 53px;
+    }
+  }
+}

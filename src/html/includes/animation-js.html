@@ -1,0 +1,93 @@
+<script>
+    let preloader = document.body.querySelector('#page-preloader');
+    let searchTime = 5000; // time for search women (5 sec)
+    const progressSpeed1 = 40; // speed for 1st progress bar
+    document.addEventListener('DOMContentLoaded', initPage);
+
+    function initPage() {
+        let displays = document.querySelectorAll('.display');
+        displays.forEach(display => display.style.display = 'none');
+        showAreaIndex();
+        initEvents();
+    }
+
+    function initEvents() {
+        let btnIndex = document.querySelectorAll('.btn-index');
+        btnIndex.forEach(function(btn){ // for mobile and desktop buttons
+            btn.addEventListener('click', handlerClickBtnIndex);
+        });
+    }
+
+    function handlerClickBtnIndex(e) {
+        hideAreaIndex();
+        showAreaProgressBars();
+        setTimeout(goToLogin, searchTime);
+    }
+
+    function showAreaIndex() {
+        document.body.classList.add('body_bg');
+        document.body.classList.add('body_bg-mob');
+        document.querySelector('.display.display_01').style.display = 'block';
+    }
+    function hideAreaIndex() {
+        preloader.classList.remove('done');
+        document.querySelector('.display.display_01').style.display = 'none';
+    }
+
+    function showAreaProgressBars() {
+        document.querySelector('.display.display_02').style.display = 'block';
+        //document.querySelector('.display.display_02').scrollIntoView({block: 'center', behavior: 'smooth'});
+        setTimeout(function() {
+            preloader.classList.add('done');
+        }, 1000);
+        loading();
+    }
+    function hideAreaProgressBars() {
+        document.querySelector('.display.display_02').style.display = 'none';
+    }
+
+    function goToLogin() {
+        preloader.classList.remove('done');
+        setTimeout(hideAreaProgressBars, 500);
+        showAreaLogin();
+    }
+
+    function showAreaLogin() {
+        document.body.classList.add('no-push-bottom');
+        let area = document.querySelector('.display.display_03');
+        area.style.display = 'block';
+        setTimeout(function() {
+            preloader.classList.add('done');
+        }, 500);
+        //area.classList.add('animation');
+        //animateAreaLogin(area);
+        //setTimeout(animateAreaLogin, 100, area);
+    }
+
+    function loading() {
+        let progressBar1 = document.querySelector('.progress.progress_index .progress-bar');
+        progressValue(progressBar1, progressSpeed1);
+    }
+
+    function progressValue(progressBar, progressSpeed) {
+        let tickValue = progressBar.getAttribute('aria-valuemin');
+        let endValue = progressBar.getAttribute('aria-valuemax');
+        let timerId = setTimeout(function run() {
+            progressBar.style.width = tickValue + '%';
+            progressBar.setAttribute('aria-valuenow', tickValue);
+            tickValue++;
+            if(tickValue <= endValue) {
+                timerId = setTimeout(run, progressSpeed);
+            }
+        }, progressSpeed);
+    }
+
+    function animateAreaLogin(el) {
+        el.classList.add('animation_stop');
+        setTimeout(function () {
+            el.classList.remove('animation');
+            el.classList.remove('animation_stop');
+        },1000);
+    }
+
+</script>
