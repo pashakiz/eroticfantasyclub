@@ -1,5 +1,5 @@
-/**/$container-xxl:             1364px;
-/**/$container-xxxl:            1640px;
+$container-xxl:             1360px;
+$container-xxxl:            1654px;
 /**/$body_bg_color:             #EBE5E4;
 /**/$btn_bg_color:              #F69393;
 /**/$btn_bg_color_hover:        #F68282;
@@ -9,13 +9,13 @@
 /**/$bg_light_2:                #EED3D2;
 /**/$bg_light_3:                #E3DCDA;
 /**/$bg_light_4:                #E8E1DF;
-/**/$font_color:                #416A67;
-/**/$font_color2:               #fff;
-/**/$font_color3:               #F2F2F2;
+$font_color:                #2A56BC;
+$font_color2:               #fff;
+$font_color3:               #FDD3CA;
 $font_family:               "CeraRoundPro", sans-serif;
-/**/$font_weight:               400;
-/**/$font_size:                 23px;
-/**/$font_size_mobile:          16px;
+$font_weight:               400;
+$font_size:                 23px;
+$font_size_mobile:          16px;
 /**/$body_mb:                   210px;
 /**/$body_mb_mob:               100px;
 /**/$font_family2:              $font_family;
@@ -27,7 +27,7 @@ $font_family:               "CeraRoundPro", sans-serif;
 /**/$link_hover_color2:         $btn_bg_color_hover;
 /**/$footer_height:             278px;
 /**/$footer_height_mob:         300px;
-/**/$footer_text_color:         $font_color3;
+$footer_text_color:         $font_color3;
 /**/$footer_text_color_hover:   $link_hover_color;
 /**/$footer_text_color_active:  $link_hover_color;
 

@@ -27,13 +27,7 @@ body {
 }
 
 .container {
-  @media (min-width: 1500px) {
-    max-width: $container-xxl + $grid-gutter-width;
-  }
-  @media (min-width: 1920px) {
-    max-width: $container-xxxl + $grid-gutter-width;
-  }
-  &.container_xxl {
+  &.container_xxl { //profile, list
     @media (min-width: 1500px) {
       max-width: $container-xxl + $grid-gutter-width;
     }
@@ -41,33 +35,25 @@ body {
       max-width: $container-xxl + $grid-gutter-width;
     }
   }
-  &.container_index {}
-  &.container_index-text {
-    max-width: 812px + $grid-gutter-width;
-    @media (min-width: 1200px) {
-      max-width: 812px + $grid-gutter-width;
+  &.container_xxxl { //header
+    @media (min-width: 1500px) {
+      max-width: $container-xxl + $grid-gutter-width;
+    }
+    @media (min-width: 1920px) {
+      max-width: $container-xxxl + $grid-gutter-width;
     }
   }
-  &.container_settings {
-    @media (min-width: 1200px) {
-      max-width: 1022px + $grid-gutter-width;
+  &.container_index { //index, progress, login
+    @media (min-width: 1920px) {
+      padding-left: 15px + 17px;
+      padding-right: 15px + 17px;
     }
   }
-  &.container_profile {
-    @media (min-width: 1200px) {
-      padding-top: 120px;
-    }
-    .container__inner {}
-  }
-  &.container_narrow {
-    @media (min-width: 1200px) {
-      max-width: 896px + $grid-gutter-width;
-    }
-  }
+  &.container_settings {}
+  &.container_profile {}
   &.container_text {
-    padding-top: 43px;
     @media (min-width: 1200px) {
-      padding-top: 153px;
+      max-width: 1088px + $grid-gutter-width;
     }
   }
   &.container_footer {}

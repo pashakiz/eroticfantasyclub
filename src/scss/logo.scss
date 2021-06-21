@@ -4,28 +4,29 @@
   justify-content: center;
   position: relative;
   .logo__img {
-    width: 34px;
-    height: 34px;
-    margin: 0 15px 0 0;
+    width: 29px;
+    height: 29px;
+    margin: 0 7px 3px 0;
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 100%;
-    background-image: url('../img/icons/logo-white.svg');
+    background-image: url('../img/icons/logo.svg');
     @media (min-width: 992px) {
-      width: 58px;
-      height: 58px;
-      margin: 0 35px 0 0;
+      width: 65px;
+      height: 65px;
+      margin: 0 24px 6px 0;
     }
   }
   .logo__txt {
     text-transform: uppercase;
     font-family: $font_family;
-    font-weight: 500;
-    color: $font_color2;
-    font-size: 15px;
-    letter-spacing: 2px;
+    font-weight: 700;
+    color: $font_color;
+    font-size: 14px;
+    letter-spacing: 4px;
     @media (min-width: 992px) {
-      font-size: 25px;
+      letter-spacing: 5px;
+      font-size: 30px;
     }
   }
 }
