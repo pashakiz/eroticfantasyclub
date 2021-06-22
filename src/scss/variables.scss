@@ -32,7 +32,7 @@ $footer_text_color_hover:   $link_hover_color;
 $footer_text_color_active:  $link_hover_color;
 
 //Form
-$input_bg:                  #DEDBDA;
+$input_bg:                  rgba(#fff, 0.5);
 $input_hover_bg:            #BFD2D1;
 $input_txt_family:          $font_family;
 $input_txt_color:           $font_color;
@@ -126,20 +126,20 @@ $radio_active_bg_color:      $radio_bg_color;
 $radio_bg_icon:              "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='4' fill='%234E464F'/%3E%3C/svg%3E";
 
 //Custom Switch
-$switch_bg_width: 105px;
-$switch_bg_height: 56px;
-$switch_bg_width_mob: 64px;
-$switch_bg_height_mob: 28px;
+$switch_bg_width: 36px;
+$switch_bg_height: 79px;
+$switch_bg_width_mob: 16px;
+$switch_bg_height_mob: 34px;
 $switch_bg_border_radius: 100px;
-$switch_dot_size_w: 23px;
-$switch_dot_size_h: 23px;
-$switch_dot_size_w_mob: 16px;
-$switch_dot_size_h_mob: 16px;
+$switch_dot_size_w: 46px;
+$switch_dot_size_h: 46px;
+$switch_dot_size_w_mob: 20px;
+$switch_dot_size_h_mob: 20px;
 $switch_dot_border_radius: 100%;
-$switch_bg_color: $input_bg;
+$switch_bg_color: #FEDFD9;
 $switch_bg_color_active: $input_bg;
 $switch_bg_color_checked: $input_bg;
-$switch_dot_color: #C1C1C1;
+$switch_dot_color: #B1B1B1;
 $switch_dot_color_active: $switch_dot_color;
 $switch_dot_color_checked: $bg_dark_1;
 $switch_border_color: #000;
@@ -157,15 +157,15 @@ $switch_dot_txt_padding_mob: 0;
 $switch_dot_txt_padding: 0;
 $switch_dot_txt_color: $font_color3;
 $switch_dot_txt_color_checked: $font_color3;
-$switch_margin_right: 49px;
-$switch_margin_right_mob: 20px;
+$switch_margin_right: 83px;
+$switch_margin_right_mob: 26px;
 $switch_margin_top: 0;
-$switch_margin_top_mob: 28px;
+$switch_margin_top_mob: 0;
 $switch_label_fontfamily: $font_family;
-$switch_label_fontsize: 20px;
-$switch_label_fontsize_mob: $font_size_mobile;
-$switch_label_lineheight: 37px;
-$switch_label_lineheight_mob: 28px;
+$switch_label_fontsize: $font_size;
+$switch_label_fontsize_mob: 15px;
+$switch_label_lineheight: 45px;
+$switch_label_lineheight_mob: 25px;
 
 //Bootstrap container width
 @function get-container-width($key: 'md') {

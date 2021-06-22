@@ -182,26 +182,16 @@ textarea.form-control {
   }
 }
 .form-group_swicher {
-  margin: 0 -15px 40px;
-  padding: 0 15px 40px;
-  border-bottom: 1px solid $input_bg;
-  &.form-group_swicher-last {
-    border-bottom: none;
-    padding: 0 15px 0;
-  }
+  margin: 0 0 20px;
   @media (min-width: 768px) {
-    margin: 0 0 67px 0;
-    border-bottom: none;
+    margin: 0 0 64px;
     padding: 0;
-    &.form-group_swicher-last {
-      padding: 0;
-    }
   }
 }
 .form-group_btn-unsuscr {
-  margin-top: 63px;
+  margin-top: 60px;
   @media (min-width: 768px) {
-    margin-top: 93px;
+    margin-top: 90px;
   }
 }
 
@@ -437,12 +427,12 @@ textarea.form-control {
 
 .custom-switch {
   &.custom-control {
-    padding: $switch_bg_height_mob+$switch_margin_top_mob 0 0 0;
-    //padding: 0 0 0 $switch_bg_width_mob+$switch_margin_right_mob;
+    //padding: $switch_bg_height_mob+$switch_margin_top_mob 0 0 0;
+    padding: 0 0 0 $switch_bg_width_mob+$switch_margin_right_mob;
     cursor: pointer;
     position: relative;
     @media (min-width: 992px) {
-      padding: 0 0 0 $switch_bg_width+$switch_margin_right;
+      padding: 0 0 0 $switch_bg_width+$switch_margin_right+6px;
       margin-left: 0;
       margin-right: 0;
     }
@@ -451,15 +441,14 @@ textarea.form-control {
     font-family: $switch_label_fontfamily;
     font-size: $switch_label_fontsize_mob;
     line-height: $switch_label_lineheight_mob;
-    text-align: center;
     position: relative;
     &::before {
       content: $switch_txt;
-      left: 50%;
-      margin-left: -($switch_bg_width_mob/2);
-      //left: - $switch_bg_width_mob - $switch_margin_right_mob;
-      top: - $switch_bg_height_mob - $switch_margin_top_mob;
-      //top: calc(0.25rem + 3px);
+      //left: 50%;
+      //margin-left: -($switch_bg_width_mob/2);
+      left: - $switch_bg_width_mob - $switch_margin_right_mob;
+      //top: - $switch_bg_height_mob - $switch_margin_top_mob;
+      top: calc(0.25rem + 3px);
       width: $switch_bg_width_mob;
       height: $switch_bg_height_mob;
       border: $switch_border;
@@ -472,11 +461,11 @@ textarea.form-control {
       font-size: $switch_dot_txt_size_mob;
       padding: $switch_dot_txt_padding_mob;
       color: $switch_dot_txt_color;
-      top: - $switch_bg_height_mob - $switch_margin_top_mob + 6px;
-      //top: calc(0.25rem + 10px);
-      left: 50%;
-      margin-left: -($switch_dot_size_w_mob/2) - 16px;
-      //left: - $switch_bg_width_mob - $switch_margin_right_mob + 7px;
+      //top: - $switch_bg_height_mob - $switch_margin_top_mob + 6px;
+      top: calc(0.25rem + 20px);
+      //left: 50%;
+      //margin-left: -($switch_dot_size_w_mob/2) - 16px;
+      left: - $switch_bg_width_mob - $switch_margin_right_mob - 2px;
       width: $switch_dot_size_w_mob;
       height: $switch_dot_size_h_mob;
       border-radius: $switch_dot_border_radius;
@@ -488,7 +477,7 @@ textarea.form-control {
       font-size: $switch_label_fontsize;
       line-height: $switch_label_lineheight;
       &::before {
-        top: calc(0.25rem + 1px);
+        top: calc(0.25rem + 14px);
         left: - $switch_bg_width - $switch_margin_right + 0px;
         margin-left: 0;
         width: $switch_bg_width;
@@ -497,9 +486,9 @@ textarea.form-control {
       &::after {
         font-size: $switch_dot_txt_size;
         padding: $switch_dot_txt_padding;
-        top: 21px;
+        top: 57px;
         left: - $switch_bg_width - $switch_margin_right + 20px;
-        margin-left: 0;
+        margin-left: -($switch_dot_size_w/2) - 2px;
         width: $switch_dot_size_w;
         height: $switch_dot_size_h;
       }
@@ -516,9 +505,9 @@ textarea.form-control {
         &::after {
           background-color: $switch_dot_color_checked;
           color: $switch_dot_txt_color_checked;
-          transform: translateX(32px);
+          transform: translateY(-21px);
           @media (min-width: 992px) {
-            transform: translateX(42px);
+            transform: translateY(-45px);
           }
         }
       }
@@ -664,13 +653,13 @@ textarea.form-control {
 
 .btn {
   width: 100%;
-  height: 65px;
-  padding: 23px 8px;
-  border-radius: 100px;
+  height: 60px;
+  padding: 20px 9px;
+  border-radius: 15px;
   background: $btn_bg_color;
   border: none;
   font-family: $font_family;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
   color: $font_color2;
   line-height: 1;
@@ -694,7 +683,7 @@ textarea.form-control {
     width: auto;
     height: 98px;
     font-size: 24px;
-    padding: 33px 15px 33px;
+    padding: 34px 15px;
   }
   &.btn_1 { //index
     display: block;
