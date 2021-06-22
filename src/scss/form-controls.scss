@@ -428,7 +428,7 @@ textarea.form-control {
 .custom-switch {
   &.custom-control {
     //padding: $switch_bg_height_mob+$switch_margin_top_mob 0 0 0;
-    padding: 0 0 0 $switch_bg_width_mob+$switch_margin_right_mob;
+    padding: 0 0 0 $switch_bg_width_mob+$switch_margin_right_mob+3px;
     cursor: pointer;
     position: relative;
     @media (min-width: 992px) {
