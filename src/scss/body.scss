@@ -16,7 +16,7 @@ body {
   &.body_bg-profile {
     background-color: #fff;
     @media (min-width: 1200px) {
-      background: url('../img/bg/bg.svg');
+      background-image: url('../img/bg/bg.svg');
       background-repeat: no-repeat;
       background-position: 50% 0;
       background-size: cover;
@@ -80,7 +80,7 @@ body {
   .loader {
     width: 75px;
     height: 75px;
-    background-image: url('../img/icons/favicon.svg');
+    background-image: url('../img/icons/heart.svg');
     position: absolute;
     top: 50%;
     left: 50%;

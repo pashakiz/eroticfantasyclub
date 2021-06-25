@@ -63,27 +63,27 @@ $(function() {
                 },
             }
         });
-        owlInitFor('.user-list', 1, 1200, {
-            loop: false,
-            dots: false,
-            items: 1,
-            margin: 22,
-            autoWidth: true,
-            responsive:{
-                768:{
-                    margin: 22
-                },
-                992:{
-                    margin: 22
-                },
-                1200:{
-                    margin: 48
-                },
-                1500:{
-                    margin: 48
-                },
-            }
-        });
+        // owlInitFor('.user-list', 1, 1200, {
+        //     loop: false,
+        //     dots: false,
+        //     items: 1,
+        //     margin: 22,
+        //     autoWidth: true,
+        //     responsive:{
+        //         768:{
+        //             margin: 22
+        //         },
+        //         992:{
+        //             margin: 22
+        //         },
+        //         1200:{
+        //             margin: 48
+        //         },
+        //         1500:{
+        //             margin: 48
+        //         },
+        //     }
+        // });
 
         //slider (Profile gallery)
         owlInitProfile('.up-slider');
@@ -178,27 +178,6 @@ $(function() {
                     margin: 30
                 },
                 1920:{
-                    margin: 48
-                },
-            }
-        });
-        owlInitFor('.user-list', 1, 1200, {
-            loop: false,
-            dots: false,
-            items: 1,
-            margin: 22,
-            autoWidth: true,
-            responsive:{
-                768:{
-                    margin: 22
-                },
-                992:{
-                    margin: 22
-                },
-                1200:{
-                    margin: 48
-                },
-                1500:{
                     margin: 48
                 },
             }

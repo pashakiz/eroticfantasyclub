@@ -12,6 +12,13 @@
   }
 }
 
+.body_bg {
+  .header {
+    background-color: $body_bg_color;
+    margin: 0;
+  }
+}
+
 .body_bg-profile {
   .header {
     background-color: $body_bg_color;

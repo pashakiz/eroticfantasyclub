@@ -402,12 +402,12 @@
   }
 
   &.compatibility_list {
-    margin: 0 0 10px 0;
+    margin: 0;
     @media (min-width: $user_list_item_breakpoint) {
-      margin: 0 0 26px 0;
+      margin: 0;
     }
     .compatibility__title {
-      font-size: 6px;
+      font-size: 7px;
       margin-top: 6px;
       text-align: center;
       @media (min-width: $user_list_item_breakpoint) {
@@ -417,30 +417,32 @@
     }
     .compatibility__progress {
       .dotmark {
-        background-color: #E7CCCA;
-        width: 9px;
-        height: 6px;
+        //background-color: #E7CCCA;
+        width: 10px;
+        height: 5px;
         + .dotmark {
           margin-left: 2px;
         }
         @media (min-width: $user_list_item_breakpoint) {
           width: 17px;
-          height: 10px;
+          height: 9px;
           + .dotmark {
-            margin-left: 5px;
+            margin-left: 6px;
           }
         }
       }
     }
     .compatibility__chart {
       +.compatibility__chart {
-        margin-left: 5px;
+        margin-left: 8px;
         @media (min-width: $user_list_item_breakpoint) {
-          margin-left: 8px;
+          margin-left: 19px;
         }
       }
     }
   }
+
+  &.compatibility_login {}
 }
 
 .user-profile-title {
