@@ -38,9 +38,6 @@ $(function() {
             $('.profile-photo').css('background-image', 'url(' + imageUrl + ')');
         });
 
-        //slider (Profile gallery) for mobile
-        owlInitProfile('.up-slider');
-
         //custom sliders
         owlInit('.login-slider', {
             loop: true,
@@ -88,6 +85,19 @@ $(function() {
             }
         });
 
+        //slider (Profile gallery)
+        owlInitProfile('.up-slider');
+
+        //slider (Profile gallery) set first active
+        const first = document.body.querySelector('.up-slider.owl-carousel .owl-item');
+        first.classList.add('active_first');
+        $('.up-slider.owl-carousel').on('translated.owl.carousel', function(event) {
+            const all = document.body.querySelectorAll('.up-slider.owl-carousel .owl-item.active_first');
+            all.forEach(item => item.classList.remove('active_first'));
+            const first = document.body.querySelector('.up-slider.owl-carousel .owl-item.active');
+            first.classList.add('active_first');
+        });
+
     });
 
     //init owl carousel for custom screen width
@@ -118,11 +128,31 @@ $(function() {
 
     function owlInitProfile(el_class) {
         $(el_class).addClass('owl-carousel');
+
         $('.owl-carousel' + el_class).owlCarousel({
+            //loop: true,
             items: 1,
             dots: false,
-            nav: true,
-            navText: ['','']
+            nav: false,
+            navText: ['',''],
+            margin: 5,
+            responsive:{
+                992:{
+                    margin: 15,
+                },
+                1200:{
+                    items: 3,
+                    nav: true,
+                    autoWidth: true,
+                    margin: 29,
+                },
+                1500:{
+                    items: 3,
+                    nav: true,
+                    autoWidth: true,
+                    margin: 35,
+                },
+            }
         });
     }
 

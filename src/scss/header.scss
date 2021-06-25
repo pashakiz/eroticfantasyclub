@@ -12,22 +12,11 @@
   }
 }
 
-.body_bg {
+.body_bg-profile {
   .header {
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      bottom: -28px - 28px - 1px;
-      left: 0;
-      right: 0;
-      width: 100%;
-      height: 28px + 28px;
-      background-color: $body_bg_color;
-      @media (min-width: 992px) {
-        height: 58px + 106px;
-        bottom: -58px - 106px - 1px;
-      }
+    background-color: $body_bg_color;
+    @media (min-width: 1200px) {
+      background-color: transparent;
     }
   }
 }

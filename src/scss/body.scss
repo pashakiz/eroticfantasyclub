@@ -11,17 +11,15 @@ body {
 
   &.body_bg {
     background-color: $bg_dark_1;
-    &.body_bg-mob {
-      background-color: $bg_dark_1;
-      @media (min-width: 1200px) {
-        background-color: $body_bg_color;
-      }
-      .body__bgwrap {
-        background-color: $body_bg_color;
-        @media (min-width: 1200px) {
-          background-color: transparent;
-        }
-      }
+  }
+
+  &.body_bg-profile {
+    background-color: #fff;
+    @media (min-width: 1200px) {
+      background: url('../img/bg/bg.svg');
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: cover;
     }
   }
 }
@@ -50,7 +48,16 @@ body {
     }
   }
   &.container_settings {}
-  &.container_profile {}
+  &.container_profile {
+    .container__inner_not {
+      @media (min-width: 1200px) {
+        padding: 0 10px;
+      }
+      @media (min-width: 1500px) {
+        padding: 0 87px;
+      }
+    }
+  }
   &.container_text {
     @media (min-width: 1200px) {
       max-width: 1088px + $grid-gutter-width;
