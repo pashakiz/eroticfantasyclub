@@ -33,20 +33,20 @@
 
 .logo_main {
   flex-direction: column;
-  margin: 52px 0 35px;
+  margin: 52px 0 0;
   @media (min-width: 992px) {
-    margin: 52px 0 35px;
+    margin: 52px 0 0;
   }
   @media (min-width: 1200px) {
     flex-direction: row;
     justify-content: flex-start;
-    margin: 80px 0 98px;
+    margin: 80px 0 0;
   }
   @media (min-width: 1500px) {
-    margin: 143px 0 98px;
+    margin: 143px 0 0;
   }
   @media (min-width: 1920px) {
-    margin: 143px 0 98px;
+    margin: 143px 0 0;
   }
   .logo__img {
     width: 44px;
@@ -89,6 +89,37 @@
   }
 }
 
+.logo_search {
+  flex-direction: column;
+  .logo__img {
+    width: 129px;
+    height: 127px;
+    margin: 0 0 17px 0;
+    background-image: url('../img/icons/heart.svg');
+    animation: 2s heartbeat1 infinite linear, 1s heartspin infinite linear;
+    position: absolute;
+    @media (min-width: 1200px) {
+      width: 269px;
+      height: 263px;
+      margin: 0 0 55px 0;
+      animation: 2s heartbeat2 infinite linear, 1s heartspin infinite linear;
+    }
+  }
+  .logo__txt {
+    font-size: 23px;
+    line-height: 37px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 180px 0 0;
+    @media (min-width: 1200px) {
+      font-size: 30px;
+      line-height: 38px;
+      letter-spacing: 3px;
+      padding: 318px 0 0;
+    }
+  }
+}
+
 .logo_footer {
   margin: 0 0 40px 0;
   @media (min-width: 992px) {
@@ -102,3 +133,42 @@
   }
 }
 
+
+@keyframes heartspin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes heartbeat1 {
+  0% {
+    width: 129px;
+    height: 127px;
+  }
+  50% {
+    width: 83px;
+    height: 82px;
+  }
+  100% {
+    width: 129px;
+    height: 127px;
+  }
+}
+
+@keyframes heartbeat2 {
+  0% {
+    width: 129px;
+    height: 127px;
+  }
+  50% {
+    width: 269px;
+    height: 263px;
+  }
+  100% {
+    width: 129px;
+    height: 127px;
+  }
+}

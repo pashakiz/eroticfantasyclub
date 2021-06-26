@@ -682,28 +682,27 @@ textarea.form-control {
   }
   &.btn_1 { //index
     display: block;
+    width: 100%;
+    max-width: 538px;
     margin: 0 auto;
     @media (min-width: 768px) {
       width: 382px;
-      max-width: 382px;
     }
     @media (min-width: 992px) {
-      width: 100%;
-      max-width: 382px;
+      height: 60px;
+      font-size: 16px;
+      padding: 21px 9px;
     }
     @media (min-width: 1200px) {
-      width: 600px !important;
-      max-width: 600px;
+      width: 100%;
       margin: 0;
-      left: -250px;
     }
     @media (min-width: 1500px) {
-      width: 730px !important;
-      max-width: 730px;
-    }
-    @media (min-width: 1920px) {
-      width: 730px !important;
-      max-width: 730px;
+      width: 100%;
+      margin: 0;
+      height: 98px;
+      font-size: 24px;
+      padding: 35px 15px;
     }
   }
   &.btn-login {

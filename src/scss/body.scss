@@ -82,7 +82,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: 1s spin infinite linear;
+    animation: 1s beat infinite linear, 1s spin infinite linear;
     background-repeat: no-repeat;
     background-position: 50%;
   }
@@ -90,14 +90,26 @@ body {
     opacity: 0;
     visibility: hidden;
   }
-  @keyframes spin {
-    from {
+  @keyframes beat {
+    0% {
       width: 75px;
       height: 75px;
     }
-    to {
+    50% {
       width: 150px;
       height: 150px;
+    }
+    100% {
+      width: 75px;
+      height: 75px;
+    }
+  }
+  @keyframes spin {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
     }
   }
 }
