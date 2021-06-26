@@ -106,7 +106,10 @@
     }
     &.menu_notify {
       background-image: url('../img/icons/menu-notifications.svg');
-      background-position-y: calc(50% - 4px);
+      background-position-y: calc(50% - 2px);
+      @media (min-width: 992px) {
+        background-position-y: calc(50% - 4px);
+      }
     }
   }
 }
