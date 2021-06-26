@@ -55,6 +55,25 @@ body textarea:required:valid {
   }
   &.form-control_login {
     text-align: center;
+    background-color: $input_hover_bg;
+    &:hover {
+      background-color: $input_bg;
+      color: $input_hover_txt_color;
+    }
+    &:focus {
+      box-shadow: none;
+      background-color: $input_bg;
+      color: $input_hover_txt_color;
+      border-color: $btn_bg_color;
+    }
+    @media (min-width: 1200px) {
+      padding: 15px 35px;
+      //font-size: 20px;
+    }
+    @media (min-width: 1500px) {
+      padding: 34px 53px 33px;
+      font-size: $input_txt_size;
+    }
   }
 }
 input.form-control {
@@ -69,13 +88,9 @@ input.form-control {
     height: 56px;
     @media (min-width: 1200px) {
       height: 98px;
-      padding: 15px 35px;
-      font-size: 20px;
     }
     @media (min-width: 1500px) {
       height: 98px;
-      padding: 34px 53px 33px;
-      font-size: $input_txt_size;
     }
   }
 }
@@ -118,27 +133,32 @@ textarea.form-control {
   }
 }
 .form-group_login {
-  max-width: 489px;
-  margin-bottom: 15px;
+  max-width: 497px;
+  margin-bottom: 14px;
   @media (min-width: 992px) {
     margin-bottom: 23px;
   }
   @media (min-width: 1200px) {
     width: 100%;
-    max-width: 445px;
+    max-width: 400px;
     margin-bottom: 20px;
   }
   @media (min-width: 1500px) {
-    width: 489px;
-    max-width: 489px;
+    width: 497px;
+    max-width: 497px;
+    margin-bottom: 23px;
+  }
+  @media (min-width: 1920px) {
+    width: 497px;
+    max-width: 497px;
     margin-bottom: 23px;
   }
 }
 .form-group_login-btn {
-  margin: 15px 0 0;
+  margin: 16px 0 0;
   position: relative;
   @media (min-width: 1200px) {
-    margin: 34px 0 0;
+    margin: 49px 0 0;
   }
 }
 .form-group_up-login {
@@ -693,8 +713,9 @@ textarea.form-control {
       font-size: 24px;
     }
     @media (min-width: 1200px) {
+      height: 98px;
       width: auto;
-      font-size: 20px;
+      font-size: 24px;
       padding: 23px 35px;
     }
     @media (min-width: 1500px) {

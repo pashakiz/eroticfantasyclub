@@ -53,13 +53,13 @@ $(function() {
                     margin: 17
                 },
                 1200:{
-                    margin: 40
+                    margin: 35
                 },
                 1500:{
                     margin: 30
                 },
                 1920:{
-                    margin: 48
+                    margin: 74
                 },
             }
         });
@@ -172,13 +172,13 @@ $(function() {
                     margin: 17
                 },
                 1200:{
-                    margin: 40
+                    margin: 35
                 },
                 1500:{
                     margin: 30
                 },
                 1920:{
-                    margin: 48
+                    margin: 74
                 },
             }
         });

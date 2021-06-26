@@ -77,21 +77,19 @@
   }
 }
 .login-slider {
-  padding: 27px 0 0;
+  padding: 50px 0 0;
   @media (min-width: 992px) {
-    padding: 0;
+    padding: 70px 0 0;
   }
   @media (min-width: 1200px) {
-    width: 540px;
-    padding: 15px 0 0;
+    width: 620px;
+    padding: 0;
   }
   @media (min-width: 1500px) {
-    width: 730px;
-    padding: 37px 0 0;
+    width: 780px;
   }
   @media (min-width: 1920px) {
-    width: 871px;
-    padding: 319px 0 0;
+    width: 950px;
   }
   .user-list-item_extra {
     @media (min-width: 432px) {
@@ -100,6 +98,28 @@
     @media (min-width: $user_list_item_breakpoint) {
       margin: 46px 0 0 !important;
     }
+  }
+}
+
+.login-label {
+  display: none;
+  @media (min-width: 1200px) {
+    display: block;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 38px;
+    color: $font_color;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 45px;
+  }
+  @media (min-width: 1500px) {
+    font-size: 30px;
+    margin: 0 0 96px;
+  }
+  @media (min-width: 1920px) {
+    font-size: 30px;
+    margin: 0 0 96px;
   }
 }
 

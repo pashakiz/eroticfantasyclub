@@ -83,27 +83,30 @@ h1 {
     }
   }
   &.h1_login {
-    font-size: 41px;
-    line-height: 50px;
-    margin-bottom: 20px;
-    color: $font_color3;
-    font-weight: 500;
+    font-size: 23px;
+    line-height: 33px;
+    margin-bottom: 37px;
+    color: $font_color;
+    font-weight: 700;
+    text-transform: uppercase;
     @media (min-width: 1200px) {
+      text-transform: none;
+      font-weight: 500;
       text-align: left;
-      font-size: 65px;
+      font-size: 58px;
       line-height: 76px;
       margin-bottom: 40px;
       color: $font_color;
     }
     @media (min-width: 1500px) {
-      font-size: 40px;
-      line-height: 58px;
-      margin-bottom: 50px;
+      font-size: 75px;
+      line-height: 92px;
+      margin-bottom: 48px;
     }
     @media (min-width: 1920px) {
-      font-size: 74px;
-      line-height: 90px;
-      margin-bottom: 50px;
+      font-size: 75px;
+      line-height: 92px;
+      margin-bottom: 48px;
     }
   }
 }
@@ -211,7 +214,7 @@ a {
   color: $link_color;
   text-decoration: none;
   &:hover {
-    color: $link_hover_color;
+    color: $link_hover_color1;
     text-decoration: none;
   }
 }

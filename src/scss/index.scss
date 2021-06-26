@@ -37,14 +37,14 @@
   background-position: 50% 0;
   background-size: cover;
   @media (min-width: 992px) {
-    height: 683px; /**/
+    height: 900px;
   }
   @media (min-width: 1200px) {
     background-image: url('../img/bg/bg.svg');
-    height: 683px; /**/
+    height: 888px;
   }
   @media (min-width: 1500px) {
-    height: 853px; /**/
+    height: 999px;
   }
   @media (min-width: 1920px) {
     height: 1032px;
@@ -74,11 +74,14 @@
   color: $font_color2;
   &.secondscreen_index {
     margin: 227px 0 0;
+    @media (min-width: 992px) {
+      margin: 400px 0 0;
+    }
     @media (min-width: 1200px) {
-      margin: 183px 0 0;
+      margin: 90px 0 0;
     }
     @media (min-width: 1500px) {
-      margin: 183px 0 0;
+      margin: 160px 0 0;
     }
     @media (min-width: 1920px) {
       margin: 183px 0 0;
