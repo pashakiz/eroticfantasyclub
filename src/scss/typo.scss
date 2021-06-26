@@ -197,13 +197,11 @@ p {
 }
 .secondscreen_index {
   p {
-    color: $font_color3;
     line-height: 36px !important;
     @media (min-width: 768px) {
       line-height: 36px !important;
     }
     @media (min-width: 1200px) {
-      color: $font_color;
       line-height: 50px !important;
       font-size: $font_size !important;
     }

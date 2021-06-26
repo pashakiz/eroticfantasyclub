@@ -22,17 +22,7 @@
     }
   }
 }
-.display_03 {
-  .secondscreen {
-    margin-bottom: 675px;
-    @media (min-width: 992px) {
-      margin-bottom: 999px;
-    }
-    @media (min-width: 1200px) {
-      margin: 0;
-    }
-  }
-}
+.display_03 {}
 
 .btn_display-01 {
   @media (min-width: 1200px) {
@@ -41,56 +31,27 @@
 }
 
 .firstscreen {
-  height: 580px;
+  height: 668px;
+  background-image: url('../img/bg/bg-mob-login.svg');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
   @media (min-width: 992px) {
-    height: 683px;
+    height: 683px; /**/
   }
   @media (min-width: 1200px) {
-    height: 683px;
+    background-image: url('../img/bg/bg.svg');
+    height: 683px; /**/
   }
   @media (min-width: 1500px) {
-    height: 853px;
+    height: 853px; /**/
   }
   @media (min-width: 1920px) {
-    height: 1092px;
+    height: 1032px;
   }
   &.firstscreen_index {
     @media (min-width: 1200px) {
       background-position: 50% 100%;
-    }
-  }
-  &.firstscreen_bg-00 {
-    background-image: url('../img/bg/bg-firstscreen-04m.jpg');
-    @media (min-width: 1200px) {
-      height: 100vh;
-      background-image: url('../img/bg/bg-firstscreen.svg');
-    }
-  }
-  &.firstscreen_bg-01 {
-    background-image: url('../img/bg/bg-firstscreen-01m.jpg');
-    @media (min-width: 1200px) {
-      background-image: url('../img/bg/bg-firstscreen-01d.jpg');
-    }
-  }
-  &.firstscreen_bg-02 {
-    background-image: url('../img/bg/bg-firstscreen-02m.jpg');
-    @media (min-width: 1200px) {
-      background-image: url('../img/bg/bg-firstscreen-02d.jpg');
-    }
-  }
-  &.firstscreen_bg-03 {
-    background-image: url('../img/bg/bg-firstscreen-03m.jpg');
-    @media (min-width: 1200px) {
-      background-image: url('../img/bg/bg-firstscreen-03d.jpg');
-    }
-  }
-  &.firstscreen_bg-04 {
-    background-image: url('../img/bg/bg-firstscreen-04m.jpg');
-    @media (min-width: 1200px) {
-      background-image: url('../img/bg/bg-firstscreen-04d.jpg');
     }
   }
 }
@@ -112,15 +73,15 @@
 .secondscreen {
   color: $font_color2;
   &.secondscreen_index {
-    margin: 72px 0 0;
+    margin: 227px 0 0;
     @media (min-width: 1200px) {
-      margin: 100px 0 0;
+      margin: 183px 0 0;
     }
     @media (min-width: 1500px) {
-      margin: 135px 0 0;
+      margin: 183px 0 0;
     }
     @media (min-width: 1920px) {
-      margin: 188px 0 0;
+      margin: 183px 0 0;
     }
   }
 }

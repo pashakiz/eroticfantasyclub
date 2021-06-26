@@ -1,28 +1,54 @@
 .user-list-item {
   &.user-list-item_login {
-    width: 107px;
-    min-width: 107px;
+    width: 152px;
+    min-width: 152px;
     margin: 0;
-    padding: 0;
+    padding: 13px 9px 20px;
     position: relative;
     @media (min-width: 432px) {
       margin: 0;
     }
     @media (min-width: $user_list_item_breakpoint) {
-      width: 246px;
-      min-width: 246px;
+      width: 290px;
+      min-width: 290px;
+      padding: 28px 26px 46px;
       margin: 0;
     }
     @media (min-width: 1200px) {
       margin: 0;
     }
     .user-list-item__pic {
-      position: static;
-      height: 107px;
-      max-height: 107px;
+      width: 120px;
+      max-width: 120px;
+      min-width: 120px;
+      height: 178px;
+      max-height: 178px;
       @media (min-width: $user_list_item_breakpoint) {
-        height: 246px;
-        max-height: 246px;
+        width: 238px;
+        max-width: 238px;
+        min-width: 238px;
+        height: 352px;
+        max-height: 352px;
+      }
+    }
+    .user-list-item__row {
+      padding: 14px 0 17px;
+      @media (min-width: $user_list_item_breakpoint) {
+        padding: 22px 0 26px;
+      }
+      .user-list-item__name {
+        font-size: 12px;
+        margin-bottom: 4px;
+        @media (min-width: $user_list_item_breakpoint) {
+          font-size: 21px;
+          margin-bottom: 10px;
+        }
+      }
+      .user-list-item__loc {
+        font-size: 7px;
+        @media (min-width: $user_list_item_breakpoint) {
+          font-size: 15px;
+        }
       }
     }
   }

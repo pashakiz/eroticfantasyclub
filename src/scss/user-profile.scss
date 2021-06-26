@@ -417,7 +417,6 @@
     }
     .compatibility__progress {
       .dotmark {
-        //background-color: #E7CCCA;
         width: 10px;
         height: 5px;
         + .dotmark {
@@ -442,7 +441,45 @@
     }
   }
 
-  &.compatibility_login {}
+  &.compatibility_login {
+    margin: 0;
+    @media (min-width: $user_list_item_breakpoint) {
+      margin: 0;
+    }
+    .compatibility__title {
+      font-size: 7px;
+      margin-top: 6px;
+      text-align: center;
+      @media (min-width: $user_list_item_breakpoint) {
+        font-size: 13px;
+        margin-top: 9px;
+      }
+    }
+    .compatibility__progress {
+      .dotmark {
+        width: 11px;
+        height: 6px;
+        + .dotmark {
+          margin-left: 2px;
+        }
+        @media (min-width: $user_list_item_breakpoint) {
+          width: 17px;
+          height: 9px;
+          + .dotmark {
+            margin-left: 6px;
+          }
+        }
+      }
+    }
+    .compatibility__chart {
+      +.compatibility__chart {
+        margin-left: 9px;
+        @media (min-width: $user_list_item_breakpoint) {
+          margin-left: 19px;
+        }
+      }
+    }
+  }
 }
 
 .user-profile-title {

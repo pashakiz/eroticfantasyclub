@@ -42,10 +42,7 @@ body {
     }
   }
   &.container_index { //index, progress, login
-    @media (min-width: 1920px) {
-      padding-left: 15px + 17px;
-      padding-right: 15px + 17px;
-    }
+    @media (min-width: 1920px) {}
   }
   &.container_settings {}
   &.container_profile {

@@ -33,49 +33,48 @@
 
 .logo_main {
   flex-direction: column;
-  margin: 61px 0 43px;
+  margin: 52px 0 35px;
   @media (min-width: 992px) {
-    //margin: 61px 0 43px 0;
+    margin: 52px 0 35px;
   }
   @media (min-width: 1200px) {
     flex-direction: row;
     justify-content: flex-start;
-    margin: 61px 0 43px;
+    margin: 143px 0 98px;
   }
   @media (min-width: 1500px) {
-    margin: 60px 0 50px 0;
+    margin: 143px 0 98px;
   }
   @media (min-width: 1920px) {
-    margin: 193px 0 79px 0;
+    margin: 143px 0 98px;
   }
   .logo__img {
-    width: 40px;
-    height: 40px;
-    margin: 0 0 9px 0;
-    background-image: url('../img/icons/logo-white.svg');
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    margin: 0 0 16px 0;
     @media (min-width: 992px) {
-      width: 69px;
-      height: 69px;
-      margin: 0 0 15px 0;
+      width: 65px;
+      height: 65px;
+      flex: 0 0 65px;
+      margin: 0 0 16px 0;
     }
     @media (min-width: 1200px) {
-      margin: 0 30px 0 0;
-      background-image: url('../img/icons/logo.svg');
-    }
-    @media (min-width: 1500px) {
-      width: 69px;
-      height: 69px;
+      margin: 0 24px 0 0;
     }
   }
   .logo__txt {
-    color: $font_color3;
-    font-weight: 500;
-    font-size: 17px;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
     @media (min-width: 992px) {
       font-size: 30px;
+      line-height: 35px;
     }
     @media (min-width: 1200px) {
-      color: $font_color;
+      text-align: left;
+      line-height: 38px;
+      padding-top: 10px;
     }
   }
 }
