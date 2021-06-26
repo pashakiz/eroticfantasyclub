@@ -20,8 +20,6 @@ https://pashakiz.github.io/eroticfantasyclub/dist/user_list.html
 # dev pages (without animation):
 https://pashakiz.github.io/eroticfantasyclub/dist/dev-index.html
 
-https://pashakiz.github.io/eroticfantasyclub/dist/dev-search.html
-
 https://pashakiz.github.io/eroticfantasyclub/dist/dev-login.html
 
 https://pashakiz.github.io/eroticfantasyclub/dist/dev-signup.html

@@ -90,7 +90,7 @@ $(function() {
 
         //slider (Profile gallery) set first active
         const first = document.body.querySelector('.up-slider.owl-carousel .owl-item');
-        first.classList.add('active_first');
+        if (first != null) first.classList.add('active_first');
         $('.up-slider.owl-carousel').on('translated.owl.carousel', function(event) {
             const all = document.body.querySelectorAll('.up-slider.owl-carousel .owl-item.active_first');
             all.forEach(item => item.classList.remove('active_first'));

@@ -1,27 +1,6 @@
-.display {
-  p {
-    line-height: 34px;
-    @media (min-width: 768px) {
-      line-height: 40px;
-      font-size: 18px;
-    }
-  }
-}
-.display_01 {
-  .index-btn-area {
-    @media (min-width: 1200px) {
-      width: 676px;
-    }
-  }
-}
-.display_02 {
-  .index-btn-area {
-    @media (min-width: 1200px) {
-      width: 626px;
-      margin: 64px auto 0;
-    }
-  }
-}
+.display {}
+.display_01 {}
+.display_02 {}
 .display_03 {}
 
 .btn_display-01 {
@@ -122,6 +101,12 @@
   }
   @media (min-width: 1920px) {
     max-width: 538px;
+  }
+  &.btn-pressed {
+    display: none;
+    @media (min-width: 1200px) {
+      display: block;
+    }
   }
 }
 .firstscreen__content2 {
@@ -245,7 +230,7 @@
 }
 
 .btn-index {
-  animation: 2s bits infinite linear;
+  //animation: 2s bits infinite linear;
 }
 
 .circle {
